@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.popup{
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(50%, -50%) scale(1.25);
+    width: 500px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+}
+
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.popup .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.popup .form h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    color: maroon;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup .form .form-element{
+    margin: 15px 15px;
+}
+
+.popup .form .form-element label{
+    font-size: 14px;
+    color: #222;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid#aaa;
+    border-radius: 5px;
+}
+
+.popup .form .form-element input[type="checkbox"]{
+    margin-right: 5px;
+
+}
+
+.popup .form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: maroon;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: maroon;
+    text-decoration: 600;
+}
+
+
+h5{
+    font-family: Bonheur Royale;
+    font-size: 50px;
+}
+.submitBtn{
+    background-color: whitesmoke;
+}
+.produk{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+th{
+    color: maroon;
+}
+.btn-primary{
+    font-weight: bold ;
+    background-color:maroon;
+}
+
+.name-product{
+    font-size: 40px;
+   color: maroon;
+   text-align: center;
+}
+.cart-total-title{
+    font-size: 20px;
+}
+.cart-total-price{
+    font-size: 20px;
+}
+
+.btn-purchase{
+    width: 8em;
+    height: 3em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    margin-left: 65em;
+}
+footer{
+    background: maroon;
+    width:100%;
+    height: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid maroon;
+    margin-right: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row{
+    display: flex;
+    
+}
+.cart-item{
+    width: 45%;
+
+}
+
+.cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+
+}
+
+.cart-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+
+}
+
+.cart-item-image{
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56ccf2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    margin-right: 25px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.contactCont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contactCont .contactInfo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30%;
+    margin-right: 20%;
+}
+
+.contactCont .contactInfo .box{
+    margin-left: 20px;
+    position: relative;
+
+    display: flex;
+}
+
+.contact .text{
+    font-family: 'Times New Roman', Times, serif;
+    color: maroon;
+}
+.contactForm{
+    margin-bottom: 40%;
+}
+.contactForm .inputBox input{
+    margin-right: 10px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 5px 0;
+    position: relative;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-bottom: 2%;
+}
+
+.contactForm .inputBox textarea {
+    font-family:'Times New Roman', Times, serif;
+
+ 
+}
+.delete{
+    color: maroon;
+}
+
+.name-col,
+.phone-col,
+.email-col,
+.message-col{
+    width: 25%;
+
+}
+
+.bi-backspace-fill{
+    color: maroon;
+}
